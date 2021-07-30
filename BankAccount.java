@@ -211,7 +211,6 @@ public class BankAccount extends Object
     }
   }
 
-  //This method 
   public boolean withdrawDraft(double withdrawAmount)
   {
     if(this.getBalance() >= withdrawAmount)
@@ -232,7 +231,7 @@ public class BankAccount extends Object
   }
 
   
-  //
+  
   public boolean withdrawATM(double withdrawAmount)
   {
     //this calculates the sum of the aroumt withdrawn and the 
@@ -240,7 +239,7 @@ public class BankAccount extends Object
     return this.withdraw(totalWithdrawAmount);
   }
   
-  //
+  
   public void incrementDay()
   {
     if((this.getBalance() < (double)this.getMinimumBalance()) && (this.overdraftFlag == false))
@@ -260,7 +259,7 @@ public class BankAccount extends Object
     }
   }
 
-  //
+  
   public void incrementMonth()
   {
     this.currentBalance += this.interestEarned;
